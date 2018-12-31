@@ -1,5 +1,6 @@
 package lcs
 
+// LCS returns the longest common subsequence of a and b.
 func LCS(a, b []rune) (int, []rune) {
 
 	lengths := make([][]int, len(a)+1)

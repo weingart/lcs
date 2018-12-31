@@ -7,7 +7,7 @@ import (
 	"math/rand"
 )
 
-var chars []rune = []rune{
+var chars = []rune{
 	'a', 'b', 'c',
 }
 
@@ -72,13 +72,13 @@ func LCS1(a, b string) (int, string) {
 }
 
 func Max(more ...int) int {
-	max_num := more[0]
+	maxNum := more[0]
 	for _, elem := range more {
-		if max_num < elem {
-			max_num = elem
+		if maxNum < elem {
+			maxNum = elem
 		}
 	}
-	return max_num
+	return maxNum
 }
 
 func LCS2(str1, str2 string) (int, string) {
