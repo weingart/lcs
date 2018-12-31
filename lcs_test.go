@@ -105,7 +105,7 @@ func LCS2(str1, str2 string) (int, string) {
 	return table[len1][len2], Back(table, str1, str2, len1-1, len2-1)
 }
 
-//http://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+// http://en.wikipedia.org/wiki/Longest_common_subsequence_problem
 func Back(table [][]int, str1, str2 string, i, j int) string {
 	if i == 0 || j == 0 {
 		return ""
